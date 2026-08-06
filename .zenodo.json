@@ -1,0 +1,25 @@
+{
+  "upload_type": "software",
+  "title": "Verification code for \"Mixed Triple Metric Dimension of Polyhedral Graphs: Local Forcing and Extremal Families\"",
+  "creators": [
+    {
+      "name": "Adawiyah, Robiatul",
+      "affiliation": "Universitas Jember, Jember, Indonesia"
+    }
+  ],
+  "license": "cc-zero",
+  "access_right": "open",
+  "description": "Computational verification accompanying the paper \"Mixed Triple Metric Dimension of Polyhedral Graphs: Local Forcing and Extremal Families\". Eighteen independent checks over prisms, antiprisms, stacked prisms, bipyramids and the icosahedron, reproducing every row of Table 2 of the paper. Core Perl, no external dependencies, exact integer arithmetic throughout.",
+  "keywords": [
+    "metric dimension",
+    "mixed metric dimension",
+    "face metric dimension",
+    "resolving set",
+    "plane graph",
+    "polyhedral graph",
+    "graph theory",
+    "combinatorics",
+    "reproducible research"
+  ],
+  "language": "eng"
+}
