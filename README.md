@@ -1,8 +1,7 @@
 # Verification code for *Mixed Triple Metric Dimension of Polyhedral Graphs: Local Forcing and Extremal Families*
 
 This repository contains the computational verification accompanying the paper. Every row of
-Table 2 of the paper (Appendix A, "Ranges verified") is reproduced by a single self-contained
-program.
+Table 2 of the paper (Appendix A) is reproduced by a single self-contained program.
 
 ## Contents
 
@@ -39,6 +38,27 @@ List the available checks:
 The program prints a verdict for each check and exits with status 0 if all pass, nonzero
 otherwise. A complete run takes under a minute on a desktop machine.
 
+## Method
+
+Each graph is built from its combinatorial definition. All vertex distances are obtained by
+breadth-first search, the element list `V(G) ∪ E(G) ∪ F(G)` is built explicitly with each element
+stored as its set of incident vertices, and the distance from a vertex to an element is the
+minimum distance to an incident vertex.
+
+A candidate set `S` is tested by hashing the code of every element, so that `S` resolves precisely
+when no collision occurs. This costs `O(|S| · (|V|+|E|+|F|))` per candidate rather than the
+quadratic cost of pairwise comparison, which is what makes the exhaustive searches feasible.
+Minimum values are obtained by testing subsets of increasing size and stopping at the first
+success, so every reported minimum is a true minimum and not merely an upper bound.
+
+Two further routines supported the analysis rather than the verification: one lists every vertex
+separating a fixed pair of elements, and so computes the forced sets `F(G)`; the other reports the
+first unresolved pair for a candidate set.
+
+Face lists are certified throughout by Euler's formula `|V| - |E| + |F| = 2` together with the
+requirement that every edge lie on exactly two faces, so that the unbounded face is always
+counted.
+
 ## What is checked
 
 The program is organized as eighteen independent checks, one per row of Table 2 of the paper.
@@ -59,10 +79,6 @@ the proposition on `dim_m(A_4)` is re-derived independently.
 **Structural criteria.** The forcing criterion is tested against a direct separator count over all
 triangular edge-face pairs of the families considered, and the deletion criterion of the paper is
 compared, vertex by vertex, against a direct test of whether `V(G)` minus that vertex resolves.
-
-Face lists are certified throughout by Euler's formula `|V| - |E| + |F| = 2` together with the
-requirement that every edge lie on exactly two faces, so that the unbounded face is always
-counted.
 
 ## Correspondence with the paper
 
