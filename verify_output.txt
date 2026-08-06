@@ -1,0 +1,318 @@
+Transcript of a complete run of mtmd_verify.pl
+Generated: 2026-08-06 01:26 UTC
+Perl: v5.42.2
+Command: perl mtmd_verify.pl
+================================================================
+
+========================================================================
+MTMD verification suite
+========================================================================
+
+prism-exhaustive -- MTMD(Pr_n) = 4, exhaustive
+    n=3   no 3-set resolves: yes  witness {a0,a1,a2,b0} resolves: yes
+    n=4   no 3-set resolves: yes  witness {a0,a1,a2,b0} resolves: yes
+    n=5   no 3-set resolves: yes  witness {a0,a1,a3,b0} resolves: yes
+    n=6   no 3-set resolves: yes  witness {a0,a1,a3,b0} resolves: yes
+    n=7   no 3-set resolves: yes  witness {a0,a1,a4,b0} resolves: yes
+    n=8   no 3-set resolves: yes  witness {a0,a1,a4,b0} resolves: yes
+    n=9   no 3-set resolves: yes  witness {a0,a1,a5,b0} resolves: yes
+    n=10  no 3-set resolves: yes  witness {a0,a1,a5,b0} resolves: yes
+    n=11  no 3-set resolves: yes  witness {a0,a1,a6,b0} resolves: yes
+    n=12  no 3-set resolves: yes  witness {a0,a1,a6,b0} resolves: yes
+    n=13  no 3-set resolves: yes  witness {a0,a1,a7,b0} resolves: yes
+    n=14  no 3-set resolves: yes  witness {a0,a1,a7,b0} resolves: yes
+    n=15  no 3-set resolves: yes  witness {a0,a1,a8,b0} resolves: yes
+    n=16  no 3-set resolves: yes  witness {a0,a1,a8,b0} resolves: yes
+    n=17  no 3-set resolves: yes  witness {a0,a1,a9,b0} resolves: yes
+    n=18  no 3-set resolves: yes  witness {a0,a1,a9,b0} resolves: yes
+    n=19  no 3-set resolves: yes  witness {a0,a1,a10,b0} resolves: yes
+    n=20  no 3-set resolves: yes  witness {a0,a1,a10,b0} resolves: yes
+    n=21  no 3-set resolves: yes  witness {a0,a1,a11,b0} resolves: yes
+    n=22  no 3-set resolves: yes  witness {a0,a1,a11,b0} resolves: yes
+    n=23  no 3-set resolves: yes  witness {a0,a1,a12,b0} resolves: yes
+    n=24  no 3-set resolves: yes  witness {a0,a1,a12,b0} resolves: yes
+    n=25  no 3-set resolves: yes  witness {a0,a1,a13,b0} resolves: yes
+  [ OK ] prism-exhaustive  (3 <= n <= 25)
+
+prism-construction -- S = {a_0,a_1,a_c,b_0} resolves Pr_n
+  [ OK ] prism-construction  (3 <= n <= 45)
+
+antiprism -- MTMD(A_n) = 2n; every vertex is the unique separator of some pair
+    n=3   |F(A_n)|=6   of 6    V resolves: yes  Thm 3.3 violations: 0
+    n=4   |F(A_n)|=8   of 8    V resolves: yes  Thm 3.3 violations: 0
+    n=5   |F(A_n)|=10  of 10   V resolves: yes  Thm 3.3 violations: 0
+    n=6   |F(A_n)|=12  of 12   V resolves: yes  Thm 3.3 violations: 0
+    n=7   |F(A_n)|=14  of 14   V resolves: yes  Thm 3.3 violations: 0
+    n=8   |F(A_n)|=16  of 16   V resolves: yes  Thm 3.3 violations: 0
+    n=9   |F(A_n)|=18  of 18   V resolves: yes  Thm 3.3 violations: 0
+    n=10  |F(A_n)|=20  of 20   V resolves: yes  Thm 3.3 violations: 0
+    n=11  |F(A_n)|=22  of 22   V resolves: yes  Thm 3.3 violations: 0
+    n=12  |F(A_n)|=24  of 24   V resolves: yes  Thm 3.3 violations: 0
+    n=13  |F(A_n)|=26  of 26   V resolves: yes  Thm 3.3 violations: 0
+    n=14  |F(A_n)|=28  of 28   V resolves: yes  Thm 3.3 violations: 0
+    n=15  |F(A_n)|=30  of 30   V resolves: yes  Thm 3.3 violations: 0
+    n=16  |F(A_n)|=32  of 32   V resolves: yes  Thm 3.3 violations: 0
+    n=17  |F(A_n)|=34  of 34   V resolves: yes  Thm 3.3 violations: 0
+    n=18  |F(A_n)|=36  of 36   V resolves: yes  Thm 3.3 violations: 0
+    n=19  |F(A_n)|=38  of 38   V resolves: yes  Thm 3.3 violations: 0
+    n=20  |F(A_n)|=40  of 40   V resolves: yes  Thm 3.3 violations: 0
+    n=21  |F(A_n)|=42  of 42   V resolves: yes  Thm 3.3 violations: 0
+    n=22  |F(A_n)|=44  of 44   V resolves: yes  Thm 3.3 violations: 0
+    n=23  |F(A_n)|=46  of 46   V resolves: yes  Thm 3.3 violations: 0
+    n=24  |F(A_n)|=48  of 48   V resolves: yes  Thm 3.3 violations: 0
+    n=25  |F(A_n)|=50  of 50   V resolves: yes  Thm 3.3 violations: 0
+  [ OK ] antiprism  (3 <= n <= 25)
+
+stacked-exhaustive -- MTMD(C_n x P_r) = 4 (includes Pr_n at r=2 and M_n at r=3)
+    n=3  r=2   no 3-set resolves: yes  witness resolves: yes
+    n=4  r=2   no 3-set resolves: yes  witness resolves: yes
+    n=5  r=2   no 3-set resolves: yes  witness resolves: yes
+    n=6  r=2   no 3-set resolves: yes  witness resolves: yes
+    n=7  r=2   no 3-set resolves: yes  witness resolves: yes
+    n=8  r=2   no 3-set resolves: yes  witness resolves: yes
+    n=3  r=3   no 3-set resolves: yes  witness resolves: yes
+    n=4  r=3   no 3-set resolves: yes  witness resolves: yes
+    n=5  r=3   no 3-set resolves: yes  witness resolves: yes
+    n=6  r=3   no 3-set resolves: yes  witness resolves: yes
+    n=7  r=3   no 3-set resolves: yes  witness resolves: yes
+    n=8  r=3   no 3-set resolves: yes  witness resolves: yes
+    n=3  r=4   no 3-set resolves: yes  witness resolves: yes
+    n=4  r=4   no 3-set resolves: yes  witness resolves: yes
+    n=5  r=4   no 3-set resolves: yes  witness resolves: yes
+    n=6  r=4   no 3-set resolves: yes  witness resolves: yes
+    n=7  r=4   no 3-set resolves: yes  witness resolves: yes
+    n=8  r=4   no 3-set resolves: yes  witness resolves: yes
+    n=3  r=5   no 3-set resolves: yes  witness resolves: yes
+    n=4  r=5   no 3-set resolves: yes  witness resolves: yes
+    n=5  r=5   no 3-set resolves: yes  witness resolves: yes
+    n=6  r=5   no 3-set resolves: yes  witness resolves: yes
+    n=7  r=5   no 3-set resolves: yes  witness resolves: yes
+    n=8  r=5   no 3-set resolves: yes  witness resolves: yes
+  [ OK ] stacked-exhaustive  (3 <= n <= 8, 2 <= r <= 5)
+
+stacked-case-structure -- case structure of the C_n x P_r lower bound is exhaustive and fires
+    configurations by case: case 1=183890  case 2=73780  case 3a=10080  case 3b=2100
+  [ OK ] stacked-case-structure  (3 <= n <= 16, 2 <= r <= 6; unclassified = 0)
+
+pair-criteria -- window criteria of the pair lemma agree with direct computation
+    mismatches between criterion and direct computation: 0
+  [ OK ] pair-criteria  (3 <= n <= 13, 2 <= r <= 5)
+
+quad-pair-criteria -- quadrilateral pair criteria (part (iii)), both forms, n even
+    mismatches between criterion and direct computation: 0
+  [ OK ] quad-pair-criteria  (n even, 4 <= n <= 14, 2 <= r <= 5)
+
+icosahedron -- MTMD(icosahedron) = 9 < 12, and F(G) is empty
+    |V|=12 |E|=30 |F|=20  5-regular:yes  Euler:yes
+    |F(G)|=0  Thm 3.3 violations=0  MTMD=9  witness={0,1,2,3,4,7,9,10,11}
+  [ OK ] icosahedron  (single graph, exhaustive over all vertex subsets)
+
+bipyramid -- MTMD(B_n): equals |V| for n=3,4 and |V|-1 for n>=5
+    n=3  |V|=5   MTMD=5   expected=5   |F(G)|=5   violations=0
+    n=4  |V|=6   MTMD=6   expected=6   |F(G)|=6   violations=0
+    n=5  |V|=7   MTMD=6   expected=6   |F(G)|=5   violations=0
+    n=6  |V|=8   MTMD=7   expected=7   |F(G)|=6   violations=0
+    n=7  |V|=9   MTMD=8   expected=8   |F(G)|=7   violations=0
+    n=8  |V|=10  MTMD=9   expected=9   |F(G)|=8   violations=0
+  [ OK ] bipyramid  (3 <= n <= 8)
+
+bipyramid-theorem -- every step of the proof that MTMD(B_n)=n+1 for n>=5
+    n=3   C resolves:no   C+{N} resolves:no   witness(n>=4):0 witness(n>=5):0
+    n=4   C resolves:no   C+{N} resolves:no   witness(n>=4):1 witness(n>=5):0
+    n=5   C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=6   C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=7   C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=8   C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=9   C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=10  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=11  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=12  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=13  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=14  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=15  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=16  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=17  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=18  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=19  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=20  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=21  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=22  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=23  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=24  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+    n=25  C resolves:no   C+{N} resolves:yes  witness(n>=4):1 witness(n>=5):1
+  [ OK ] bipyramid-theorem  (3 <= n <= 25; false claims = 0)
+
+forcing-theorem -- Theorem 3.3 (containment ==> unique separator) across all test graphs
+    A_3      triangular (edge,face) pairs=24   |F(G)|=6   violations=0
+    A_4      triangular (edge,face) pairs=24   |F(G)|=8   violations=0
+    A_5      triangular (edge,face) pairs=30   |F(G)|=10  violations=0
+    A_6      triangular (edge,face) pairs=36   |F(G)|=12  violations=0
+    A_7      triangular (edge,face) pairs=42   |F(G)|=14  violations=0
+    A_8      triangular (edge,face) pairs=48   |F(G)|=16  violations=0
+    A_9      triangular (edge,face) pairs=54   |F(G)|=18  violations=0
+    A_10     triangular (edge,face) pairs=60   |F(G)|=20  violations=0
+    B_3      triangular (edge,face) pairs=18   |F(G)|=5   violations=0
+    B_4      triangular (edge,face) pairs=24   |F(G)|=6   violations=0
+    B_5      triangular (edge,face) pairs=30   |F(G)|=5   violations=0
+    B_6      triangular (edge,face) pairs=36   |F(G)|=6   violations=0
+    B_7      triangular (edge,face) pairs=42   |F(G)|=7   violations=0
+    B_8      triangular (edge,face) pairs=48   |F(G)|=8   violations=0
+    B_9      triangular (edge,face) pairs=54   |F(G)|=9   violations=0
+    B_10     triangular (edge,face) pairs=60   |F(G)|=10  violations=0
+    icosa    triangular (edge,face) pairs=60   |F(G)|=0   violations=0
+    total pairs tested = 690, total violations = 0
+  [ OK ] forcing-theorem  (690 pairs)
+
+faces-complete -- Euler's formula and face-edge incidence: no face is missing or duplicated
+    Pr_3         |V|=6   |E|=9   |F|=5    V-E+F=2   edges on exactly 2 faces: 9/9
+    Pr_4         |V|=8   |E|=12  |F|=6    V-E+F=2   edges on exactly 2 faces: 12/12
+    Pr_5         |V|=10  |E|=15  |F|=7    V-E+F=2   edges on exactly 2 faces: 15/15
+    Pr_6         |V|=12  |E|=18  |F|=8    V-E+F=2   edges on exactly 2 faces: 18/18
+    Pr_7         |V|=14  |E|=21  |F|=9    V-E+F=2   edges on exactly 2 faces: 21/21
+    Pr_8         |V|=16  |E|=24  |F|=10   V-E+F=2   edges on exactly 2 faces: 24/24
+    A_3          |V|=6   |E|=12  |F|=8    V-E+F=2   edges on exactly 2 faces: 12/12
+    A_4          |V|=8   |E|=16  |F|=10   V-E+F=2   edges on exactly 2 faces: 16/16
+    A_5          |V|=10  |E|=20  |F|=12   V-E+F=2   edges on exactly 2 faces: 20/20
+    A_6          |V|=12  |E|=24  |F|=14   V-E+F=2   edges on exactly 2 faces: 24/24
+    A_7          |V|=14  |E|=28  |F|=16   V-E+F=2   edges on exactly 2 faces: 28/28
+    A_8          |V|=16  |E|=32  |F|=18   V-E+F=2   edges on exactly 2 faces: 32/32
+    B_3          |V|=5   |E|=9   |F|=6    V-E+F=2   edges on exactly 2 faces: 9/9
+    B_4          |V|=6   |E|=12  |F|=8    V-E+F=2   edges on exactly 2 faces: 12/12
+    B_5          |V|=7   |E|=15  |F|=10   V-E+F=2   edges on exactly 2 faces: 15/15
+    B_6          |V|=8   |E|=18  |F|=12   V-E+F=2   edges on exactly 2 faces: 18/18
+    B_7          |V|=9   |E|=21  |F|=14   V-E+F=2   edges on exactly 2 faces: 21/21
+    B_8          |V|=10  |E|=24  |F|=16   V-E+F=2   edges on exactly 2 faces: 24/24
+    C_5xP_2      |V|=10  |E|=15  |F|=7    V-E+F=2   edges on exactly 2 faces: 15/15
+    C_5xP_3      |V|=15  |E|=25  |F|=12   V-E+F=2   edges on exactly 2 faces: 25/25
+    C_5xP_4      |V|=20  |E|=35  |F|=17   V-E+F=2   edges on exactly 2 faces: 35/35
+    C_5xP_5      |V|=25  |E|=45  |F|=22   V-E+F=2   edges on exactly 2 faces: 45/45
+    icosahedron  |V|=12  |E|=30  |F|=20   V-E+F=2   edges on exactly 2 faces: 30/30
+  [ OK ] faces-complete  (23 graphs; failures = 0)
+
+lower-bound-3 -- no 1- or 2-element set resolves a 2-connected plane graph
+    K_{2,3}       |V|=5   min-deg=2   no 1- or 2-set resolves: yes  MTMD=4
+    theta(2,2,3)  |V|=6   min-deg=2   no 1- or 2-set resolves: yes  MTMD=4
+    K_4           |V|=4   min-deg=3   no 1- or 2-set resolves: yes  MTMD=4
+    Pr_3          |V|=6   min-deg=3   no 1- or 2-set resolves: yes  MTMD=4
+    Pr_4          |V|=8   min-deg=3   no 1- or 2-set resolves: yes  MTMD=4
+    Pr_5          |V|=10  min-deg=3   no 1- or 2-set resolves: yes  MTMD=4
+    A_3           |V|=6   min-deg=4   no 1- or 2-set resolves: yes  MTMD=6
+    A_4           |V|=8   min-deg=4   no 1- or 2-set resolves: yes  MTMD=8
+    B_3           |V|=5   min-deg=3   no 1- or 2-set resolves: yes  MTMD=5
+    B_4           |V|=6   min-deg=4   no 1- or 2-set resolves: yes  MTMD=6
+    B_5           |V|=7   min-deg=4   no 1- or 2-set resolves: yes  MTMD=6
+  [ OK ] lower-bound-3  (11 graphs)
+
+A4-anomaly -- every step of the proof that mmd(A_4)=5
+    diam(A_n) = ceil(n/2) for 3<=n<=12: verified
+    n=4 separators of (v_0, v_0v_1) = {1,3}
+    n=5 separators of (v_0, v_0v_1) = {1,3,5}
+    n=6 separators of (v_0, v_0v_1) = {1,3,5}
+    4-subsets surviving the covering conditions: {0,1,4,5}  {0,3,4,7}  {1,2,5,6}  {2,3,6,7}
+    S={0,1,4,5} unresolved edge pair: {6,7} vs {2,3} code=(1,1,1,1)
+    S={0,3,4,7} unresolved edge pair: {5,6} vs {1,2} code=(1,1,1,1)
+    S={1,2,5,6} unresolved edge pair: {3,4} vs {0,7} code=(1,1,1,1)
+    S={2,3,6,7} unresolved edge pair: {4,5} vs {0,1} code=(1,1,1,1)
+    witness {a0,b0,a1,b2,a3} mixed-resolves A_4: yes
+    n=4   L_m={y0,y2,x2,x0} index pairs coincide: yes resolves: no
+    n=6   L_m={y0,y3,x2,x5} index pairs coincide: no  resolves: no
+    n=8   L_m={y0,y4,x2,x6} index pairs coincide: no  resolves: yes
+    n=10  L_m={y0,y5,x2,x7} index pairs coincide: no  resolves: yes
+    n=12  L_m={y0,y6,x2,x8} index pairs coincide: no  resolves: yes
+    mmd(A_6)=4 with witness {a0,b1,a3,b4} resolving: yes
+  [ OK ] A4-anomaly  (all steps of Proposition on mmd(A_4); false claims = 0)
+
+layered-family -- MTMD(L(n,r,sigma)) against the conjectured values, including the n=3 exception
+    L(3,2,Q    ) |V|=6   t=0  expected 4    confirmed (some 4-set resolves, no 3-set does)
+    L(4,2,Q    ) |V|=8   t=0  expected 4    confirmed (some 4-set resolves, no 3-set does)
+    L(5,2,Q    ) |V|=10  t=0  expected 4    confirmed (some 4-set resolves, no 3-set does)
+    L(3,2,T    ) |V|=6   t=1  expected 6    confirmed (some 6-set resolves, no 5-set does)
+    L(4,2,T    ) |V|=8   t=1  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(5,2,T    ) |V|=10  t=1  expected 10   confirmed (some 10-set resolves, no 9-set does)
+    L(6,2,T    ) |V|=12  t=1  expected 12   confirmed (some 12-set resolves, no 11-set does)
+    L(3,3,QQ   ) |V|=9   t=0  expected 4    confirmed (some 4-set resolves, no 3-set does)
+    L(4,3,QQ   ) |V|=12  t=0  expected 4    confirmed (some 4-set resolves, no 3-set does)
+    L(3,3,QT   ) |V|=9   t=1  expected 6    confirmed (some 6-set resolves, no 5-set does)
+    L(3,3,TQ   ) |V|=9   t=1  expected 6    confirmed (some 6-set resolves, no 5-set does)
+    L(3,3,TT   ) |V|=9   t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(4,3,QT   ) |V|=12  t=1  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(4,3,TQ   ) |V|=12  t=1  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(4,3,TT   ) |V|=12  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(5,3,QT   ) |V|=15  t=1  expected 10   confirmed (some 10-set resolves, no 9-set does)
+    L(5,3,TT   ) |V|=15  t=2  expected 10   confirmed (some 10-set resolves, no 9-set does)
+    L(6,3,TT   ) |V|=18  t=2  expected 12   confirmed (some 12-set resolves, no 11-set does)
+    L(3,4,QQQ  ) |V|=12  t=0  expected 4    confirmed (some 4-set resolves, no 3-set does)
+    L(3,4,QQT  ) |V|=12  t=1  expected 6    confirmed (some 6-set resolves, no 5-set does)
+    L(3,4,QTQ  ) |V|=12  t=1  expected 6    confirmed (some 6-set resolves, no 5-set does)
+    L(3,4,TQQ  ) |V|=12  t=1  expected 6    confirmed (some 6-set resolves, no 5-set does)
+    L(3,4,QTT  ) |V|=12  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(3,4,TQT  ) |V|=12  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(3,4,TTQ  ) |V|=12  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(3,4,TTT  ) |V|=12  t=3  expected 10   confirmed (some 10-set resolves, no 9-set does)
+    L(4,4,QQT  ) |V|=16  t=1  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(4,4,QTQ  ) |V|=16  t=1  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(4,4,TQQ  ) |V|=16  t=1  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(4,4,TTT  ) |V|=16  t=3  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(3,5,QQTT ) |V|=15  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(3,5,TQQT ) |V|=15  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    L(3,5,QTTT ) |V|=15  t=3  expected 10   confirmed (some 10-set resolves, no 9-set does)
+    L(3,5,TTTT ) |V|=15  t=4  expected 12   confirmed (some 12-set resolves, no 11-set does)
+    L(3,5,QTTQ ) |V|=15  t=2  expected 8    confirmed (some 8-set resolves, no 7-set does)
+    mismatches: 0
+  [ OK ] layered-family  (35 strip words, 3 <= n <= 6, 2 <= r <= 5, |V| <= 18)
+
+delete-one -- V minus one vertex resolves iff that vertex is neither dominated nor critical
+    n=3   free vertices: A_n=0   B_n=0  
+    n=4   free vertices: A_n=0   B_n=0  
+    n=5   free vertices: A_n=0   B_n=2  
+    n=6   free vertices: A_n=0   B_n=2  
+    n=7   free vertices: A_n=0   B_n=2  
+    n=8   free vertices: A_n=0   B_n=2  
+    n=9   free vertices: A_n=0   B_n=2  
+    icosahedron free vertices: 12 of 12
+    graphs=34 vertices tested=398
+  [ OK ] delete-one  (34 graphs, 398 vertices; mismatches = 0)
+
+face-dimension -- dim_f column of the comparison table, and the antiprism reduction
+    n=3   dim_f(Pr_n)=3  (exp 3)  dim_f(A_n)=3  (exp 3)
+    n=4   dim_f(Pr_n)=3  (exp 3)  dim_f(A_n)=3  (exp 3)
+    n=5   dim_f(Pr_n)=3  (exp 3)  dim_f(A_n)=3  (exp 3)
+    n=6   dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=7   dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=8   dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=9   dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=10  dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=11  dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=12  dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=13  dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    n=14  dim_f(Pr_n)=2  (exp 2)  dim_f(A_n)=3  (exp 3)
+    dim_f(M_n)=3 for every n tested
+    icosahedron: dim_f=5 (exp 5)  dim_m=6 (exp 6)
+    B_3  |V|=5   diam=2 dim_m=5   (>= n+1 = 4)  sep(N,Nc0)={S,c0}
+    B_4  |V|=6   diam=2 dim_m=5   (>= n+1 = 5)  sep(N,Nc0)={S,c0}
+    B_5  |V|=7   diam=2 dim_m=6   (>= n+1 = 6)  sep(N,Nc0)={S,c0}
+    B_6  |V|=8   diam=2 dim_m=7   (>= n+1 = 7)  sep(N,Nc0)={S,c0}
+    B_7  |V|=9   diam=2 dim_m=8   (>= n+1 = 8)  sep(N,Nc0)={S,c0}
+    B_8  |V|=10  diam=2 dim_m=9   (>= n+1 = 9)  sep(N,Nc0)={S,c0}
+    B_9  |V|=11  diam=2 dim_m=10  (>= n+1 = 10)  sep(N,Nc0)={S,c0}
+    B_10 |V|=12  diam=2 dim_m=11  (>= n+1 = 11)  sep(N,Nc0)={S,c0}
+    reduction to C_n verified on 715 triples, 3 <= n <= 12
+  [ OK ] face-dimension  (dim_f for 3 <= n <= 14; reduction for 3 <= n <= 12; failures = 0)
+
+mmd-values -- mmd values quoted in the comparison table
+    n=3  mmd(Pr_n)=4 (exp 4)  mmd(A_n)=5 (exp 5)  mmd(M_n)=4
+    n=4  mmd(Pr_n)=3 (exp 3)  mmd(A_n)=5 (exp 5)  mmd(M_n)=3
+    n=5  mmd(Pr_n)=4 (exp 4)  mmd(A_n)=5 (exp 5)  mmd(M_n)=4
+    n=6  mmd(Pr_n)=3 (exp 3)  mmd(A_n)=4 (exp 4)  mmd(M_n)=3
+    n=7  mmd(Pr_n)=4 (exp 4)  mmd(A_n)=5 (exp 5)  mmd(M_n)=4
+    n=8  mmd(Pr_n)=3 (exp 3)  mmd(A_n)=4 (exp 4)  mmd(M_n)=3
+    n=9  mmd(Pr_n)=4 (exp 4)  mmd(A_n)=5 (exp 5)  mmd(M_n)=4
+    n=10 mmd(Pr_n)=3 (exp 3)  mmd(A_n)=4 (exp 4)  mmd(M_n)=3
+    n=11 mmd(Pr_n)=4 (exp 4)  mmd(A_n)=5 (exp 5)  mmd(M_n)=4
+  [ OK ] mmd-values  (3 <= n <= 11)
+
+========================================================================
+RESULT: all 18 check(s) passed
+
+================================================================
+Exit status: 0 (all checks passed)
